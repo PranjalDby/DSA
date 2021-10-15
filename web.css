@@ -1,9 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url("https://github.githubassets.com/images/modules/site/home/globe.jpg");
     width: 1399px;
     background-repeat: none;
 }
-
 header {
     display: block;
     padding: 14px;
@@ -86,4 +89,6 @@ img {
     text-transform: capitalize;
 }
 a{color:white;text-decoration:none;}
+button{text-transform:capitalize;text-shadow:2px;}
+button:hover{color:purple;background-color:whitesmoke;}
 
