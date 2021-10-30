@@ -21,7 +21,7 @@ int main()
     forth->data=12;
     forth->next=NULL;
     // add thr element at first
-    if(start->next==NULL){
+  /*   if(start->next==NULL){
         printf("null");
     }
     struct node *ptr=(struct node *)malloc(sizeof(struct node));
@@ -34,7 +34,21 @@ int main()
     {
         printf("%d\n",s->data);
         s=s->next;
+    } */
+    // adding the element at last positon 
+     struct node *ptr=(struct node *)malloc(sizeof(struct node));
+       if(start->next==NULL){
+        printf("null");
+        free(ptr);
     }
-    
+    ptr->data=34;
+    ptr->next=forth;
+    ptr=start;
+    while(ptr!=NULL)
+    {   
+        printf("%d\n",ptr->data);
+        ptr=ptr->next;
+    }
+  
     
 } 
