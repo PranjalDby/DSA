@@ -10,10 +10,28 @@ void display(int arr[],int size)
     }
     
 }
+void insert(int arr[],int size,int element,int index,int max)
+{
+    if(size>=max){
+        printf("not enough space:\n");
+    }
+    int i=size;
+    while (i>=index)
+    {
+        arr[i+1]=arr[i];
+        i--;
+    }
+    arr[index]=element;
+    
+}
 int main()
 {
     int arr[100]={1,2,3,4};
     int size=4;
+    int index=3;
+    int element=6;
+    insert(arr,size,element,index,100);
+    size=size+1;
     display(arr,size);    
  
    
