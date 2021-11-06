@@ -3,19 +3,22 @@
 #include<string.h>
 int merg(int arr[],int arr2[],int arr3[],int size1,int size2,int max)
 {
-    int i,j;
-    printf("first array is:\n");
-    for ( i = 0; i<size1;i++)
+    int i,j,k;
+    int index=0;
+    for (i = 0;i <size1;i++)
     {
-        printf("%d\n",arr[i]);
+         arr3[index]=arr[i];
+         index++;
     }
-    printf("second array is:\n");
-    for ( i = 0; i <size2; i++)
+    for (i = 0; i<size2;i++)
     {
-        printf("%d\n",arr2[i]);
+        arr3[index]=arr2[i];
+        index++;
     }
-    
-    
+    for ( j = 0; j <max; j++)
+    {
+        printf("%d\n",arr3[j]);
+    } 
 }
 int main()
 {
