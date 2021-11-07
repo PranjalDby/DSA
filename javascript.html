@@ -7,40 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
     <style>
-        body{background-image: url("https://analyticsindiamag.com/wp-content/uploads/2019/11/javascript.png"); 
-    };
-    p{display:flex;animation:animate 2s;}
+    h1{font-family:'Courier New', Courier, monospace;color: darkred;animation:animate 3s ease-in-out infinite;}
     @keyframes animate {
-        from{width:30px;}
-        to{width:50px;}
+        100%{transform:translateX(20em)}
+        50%{transform: translate(left);}
+        0%{transform: translate(center);}
     }
-    </style>
+</style>
 </head>
+
 <body>
     <header>
-    <p>javascript tutorial</p>
+        <h1>welcome to javascript tutorial</h1>
     </header>
-    <script>
-        console.log("hello world");
-        //numbers..
-     /*    var num1=22;
-        var  num2=33;
-        console.log(num1+num2); */
-        // boolean values;
-        /* var a=true;
-        var b=false;
-        console.log(a) */
-        // strings...
-       /*  var a="hello";
-        var b="pranjal";
-        console.log(a+b); */
-        // arrays;
-        var arr=[1,2,"pranjal",4,5];
-        //objects
-        var marks={pranjal:22,harry:23};
-        // undefined and null
-        var a;
-        var b=null;
-    </script>
 </body>
+<script>
+console.log("hello world");
+let x=22;
+let y=20;
+console.log(x+y);
+/* function in java script */
+function display(a,b)
+{
+    console.log(a,b);
+}
+let a="hello world";
+let b="hey there";
+display(a,b);
+//array 
+let array=['0',1,2,'3',4,5,6,7,8,9];
+for(let i=0;i<10;i++)
+{
+    console.log(array[i]);
+}
+/* note:1--if color is green means data is type of number
+note:2--if color is black means data is type of string */
+console.log('\n')
+console.log("passing array to function")
+function arr(size,arr)
+{   
+    for( let i=0;i<size;i++)
+    {
+    console.log(arr[i])
+    }
+}
+arr(10,array);
+console.log("conditional statements:\n");
+let age =18;
+console.log("enter the age:\n");
+if(age<18)
+{
+    console.log("your are a child\n");
+}
+else if(age>18)
+{
+    console.log("you are not a child:\n");
+}
+else if(age==18)
+{
+    console.log("you are a teenager:\n");
+}
+</script>
 </html>
