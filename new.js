@@ -1,4 +1,4 @@
-console.log("hello world");
+/* console.log("hello world");
 let x=22;
 let y=20;
 console.log(x+y);
