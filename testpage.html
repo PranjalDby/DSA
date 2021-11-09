@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testpage</title>
+    <style>
+        nav {
+            display: flex;
+            position: relative;
+            left: -34px;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        li {
+            display: inline-flex;
+            padding-inline-start: 60px;
+            text-transform: capitalize;
+        }
+
+        .navigation {
+            background-color: rgba(0, 0, 0, 0.466);
+            color: white;
+            box-sizing: content-box;
+            margin: 20px;
+        }
+
+        ul {
+            width: 100vw;
+        }
+
+        body {
+            background-image: image-set("cool-background.png");
+            background-attachment: fixed;
+        }
+
+        li:hover {
+            color: orangered;
+            text-shadow: 3px;
+        }
+        .frm{display:inline-block;text-shadow: black 2px;padding-inline-start: 20px;margin: 10px;}
+        input#fname{margin: 10px;color: brown;}
+        input#fnam:hover{border-radius:2px;}
+        input#lname{margin: 10px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="frm">
+            <form method="get">
+                <input type="txt" placeholder="enter you name" name="first name" id="fname">
+                <br>
+                <input type="txt" placeholder="enter your last_name" name="lastname" id="lname">
+            </form>
+        </div>
+        </main>
+    </header>
+</body>
+
+</html>

@@ -3,7 +3,7 @@ let x=22;
 let y=20;
 console.log(x+y);
 /* function in java script */
-function display(a,b)
+/* function display(a,b)
 {
     console.log(a,b);
 }
@@ -15,10 +15,10 @@ let array=['0',1,2,'3',4,5,6,7,8,9];
 for(let i=0;i<10;i++)
 {
     console.log(array[i]);
-}
+} */ 
 /* note:1--if color is green means data is type of number
 note:2--if color is black means data is type of string */
-console.log('\n')
+/* console.log('\n')
 console.log("passing array to function")
 function arr(size,arr)
 {   
@@ -42,4 +42,10 @@ else if(age>18)
 else if(age==18)
 {
     console.log("you are a teenager:\n");
+} */
+let j=0;
+while(j<10)
+{
+    console.log(j);
+    j=j++;
 }
