@@ -35,6 +35,8 @@
         body {
             background-image: image-set("cool-background.png");
             background-attachment: fixed;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: capitalize;
         }
 
         li:hover {
@@ -61,6 +63,7 @@
         input#fnam:hover {
             border-radius: 2px;
             opacity: 1;
+            text-transform: capitalize;
         }
 
         input#lname {
@@ -69,6 +72,8 @@
         }
         #dob{position:relative;left:15px;color: white;}
         .date-time-edit{color:green;background-color: #fff;}
+        .emails{opacity:0.9;display: flex;flex-wrap: wrap;flex-direction:row;}
+        ::placeholder{text-transform: capitalize;}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -87,20 +92,26 @@
         <main>
             <div class="frm">
                 <form method="get">
-                    <input type="txt" placeholder="enter you name" name="first name" id="fname">
+                    <input type="txt" placeholder="enter you name" name="first name" id="fname"required>
                     <br>
-                    <input type="txt" placeholder="enter your last_name" name="lastname" id="lname">
+                    <input type="txt" placeholder="enter your last_name" name="lastname" id="lname"required>
                     <br>
-                    <input type="text" placeholder="father's name" id="fname">
+                    <input type="text" placeholder="father's name" id="fname"required>
                     <br>
-                    <input type="text" placeholder="mother'sname"id="mname">
+                    <input type="text" placeholder="mother'sname"id="mname"required>
                     <br>
                     <div id="dob">
-                        D.O.B <input type="date"placeholder="date_of_birth">
+                        D.O.B <input type="date"placeholder="date_of_birth"required>
                     </div>
-                </form>
+                <div class="emails">
+                    <input type="email"placeholder="Email"required>
+                    <input type="password"placeholder="password"required>
             </div>
-            <hr>
+            <button>
+                submit
+            </button>
+            </form>
+            </div>
         </main>
     </header>
 </body>
