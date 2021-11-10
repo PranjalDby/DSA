@@ -115,5 +115,19 @@
         </main>
     </header>
 </body>
-
+<script>
+   onerror=errorhandler;
+   function errorhandler(message,url,line)
+   {
+       out=("sorry an error was encountered\n");
+       out+="error\t"+message+"\n";
+       out+="url is\t"+url;
+       alert(out);
+   }
+    let str= "the fast fox jump over a lazy dog";
+   with(str)
+   {
+       document.write("string length is:\t"+length+toUpperCase()+)
+   }
+</script>
 </html>
