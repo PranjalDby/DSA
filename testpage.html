@@ -41,10 +41,34 @@
             color: orangered;
             text-shadow: 3px;
         }
-        .frm{display:inline-block;text-shadow: black 2px;padding-inline-start: 20px;margin: 10px;}
-        input#fname{margin: 10px;color: brown;}
-        input#fnam:hover{border-radius:2px;}
-        input#lname{margin: 10px;}
+
+        .frm {
+            display: inline-block;
+            text-shadow: black 2px;
+            padding-inline-start: 20px;
+            margin: 10px;
+        }
+        input{margin: 10px;}
+
+        input#fname text{
+            animation: animate 2s ease-in-out infinite;
+        }
+        @keyframes animate {
+            100%{transform: translate(right);}
+            50%{transform: translate(center);}
+            0%{transform: translate(left);}
+        }
+        input#fnam:hover {
+            border-radius: 2px;
+            opacity: 1;
+        }
+
+        input#lname {
+            margin: 10px;
+            opacity: 1;
+        }
+        #dob{position:relative;left:15px;color: white;}
+        .date-time-edit{color:green;background-color: #fff;}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -62,12 +86,21 @@
         </nav>
         <main>
             <div class="frm">
-            <form method="get">
-                <input type="txt" placeholder="enter you name" name="first name" id="fname">
-                <br>
-                <input type="txt" placeholder="enter your last_name" name="lastname" id="lname">
-            </form>
-        </div>
+                <form method="get">
+                    <input type="txt" placeholder="enter you name" name="first name" id="fname">
+                    <br>
+                    <input type="txt" placeholder="enter your last_name" name="lastname" id="lname">
+                    <br>
+                    <input type="text" placeholder="father's name" id="fname">
+                    <br>
+                    <input type="text" placeholder="mother'sname"id="mname">
+                    <br>
+                    <div id="dob">
+                        D.O.B <input type="date"placeholder="date_of_birth">
+                    </div>
+                </form>
+            </div>
+            <hr>
         </main>
     </header>
 </body>
