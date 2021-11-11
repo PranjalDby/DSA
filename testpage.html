@@ -113,6 +113,11 @@
             </form>
             </div>
         </main>
+        <div id="paragraph">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque adipisci, reprehenderit porro sunt harum aperiam aspernatur delectus consequatur nam officia cum, obcaecati in quisquam ipsum sint voluptates eius laborum exercitationem, eligendi sequi inventore possimus nostrum ipsa! Dignissimos reiciendis ratione minus. Error alias corporis veritatis sit animi. Soluta deleniti facilis alias assumenda, laboriosam odit.
+        </p>
+        </div>
     </header>
 </body>
 <script>
@@ -124,10 +129,20 @@
        out+="url is\t"+url;
        alert(out);
    }
-    let str= "the fast fox jump over a lazy dog";
+   /*  let str= "the fast fox jump over a lazy dog";
    with(str)
    {
-       document.write("string length is:\t"+length+toUpperCase()+)
+       document.write("string length is:\t"+length+toUpperCase())
+   } */
+   function O(i)
+   {
+       return typeof i=='object'?i:document.getElementById(i);
    }
+   function S(i)
+   {
+       return O(i).style
+   }
+   S('paragraph').color='blue';
+   S('paragraph').text='lowercase';
 </script>
 </html>
