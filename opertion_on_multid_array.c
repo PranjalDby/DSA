@@ -72,6 +72,7 @@ int main()
     if(row1!=row2&&col1!=col2||col1!=col2)
     {
         printf("rows and columns must be same\n");
+        goto end;
     }
     printf("enter the elements of first array:\n");
     for ( i = 0; i <row1; i++)
@@ -95,10 +96,12 @@ int main()
     {
         for(j=0;j<col_sum;j++)
         {
-            arr3[i][j]=arr[i][j]+arr2[i][j];
+            arr3[i][j]=arr[i][j] * arr2[i][j];
             printf("after array is:%d\n",arr3[i][j]);
         }
     }
+    end:
+    return 0;
     
     
     

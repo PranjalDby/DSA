@@ -91,16 +91,51 @@
         </nav>
         <main>
             <form>
-            </div>
-            <button>
-                submit
-            </button>
+                <div style="opacity: 1;display: flex;flex-wrap: wrap;justify-content: center;">
+                <table border="2px">
+                    <tr>
+                        <td style="color: white;"align="center">first_name</td>
+                    </tr>
+                    <tr><td><input type="text"placeholder="firstname"></td></tr>
+                    <tr>
+                        <td style="color: white;"align="center">middle_name</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="text"placeholder="middle_name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: white;"align="center">
+                            last_name
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text"placeholder="last_name">
+                        </td>
+                    </tr>
+                    <tr style="color: white;"align="center">
+                        <td>date_of_birth</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px red solid;"><input type="date"></td>
+                    </tr>
+                    <div id="email">
+                        <tr>
+                            <td>
+                        <input type="email"placeholder="email">
+                        </td>
+                        <td><input type="password"placeholder="enter your password"></td>
+                        </tr>
+                    </div>
+                </table>
             </form>
-            </div>
+        </div>
         </main>
         <div id="paragraph">
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque adipisci, reprehenderit porro sunt harum aperiam aspernatur delectus consequatur nam officia cum, obcaecati in quisquam ipsum sint voluptates eius laborum exercitationem, eligendi sequi inventore possimus nostrum ipsa! Dignissimos reiciendis ratione minus. Error alias corporis veritatis sit animi. Soluta deleniti facilis alias assumenda, laboriosam odit.
+       <!--  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque adipisci, reprehenderit porro sunt harum aperiam aspernatur delectus consequatur nam officia cum, obcaecati in quisquam ipsum sint voluptates eius laborum exercitationem, eligendi sequi inventore possimus nostrum ipsa! Dignissimos reiciendis ratione minus. Error alias corporis veritatis sit animi. Soluta deleniti facilis alias assumenda, laboriosam odit. -->
         </p>
         </div>
     </header>
@@ -129,5 +164,11 @@
    }
    S('paragraph').color='blue';
    S('paragraph').text='lowercase';
+   function func(string,string1,string3)
+   {
+        document.write(string)
+   }
+   this.string="hey";
+   func(string)
 </script>
 </html>
