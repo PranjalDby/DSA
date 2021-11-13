@@ -1,51 +1,31 @@
-/* console.log("hello world");
-let x=22;
-let y=20;
-console.log(x+y);
-/* function in java script */
-/* function display(a,b)
+onerror=errorhandler;
+function errorhandler(message,url,line)
 {
-    console.log(a,b);
+    out=("sorry an error was encountered\n");
+    out+="error\t"+message+"\n";
+    out+="url is\t"+url;
+    alert(out);
 }
-let a="hello world";
-let b="hey there";
-display(a,b);
-//array 
-let array=['0',1,2,'3',4,5,6,7,8,9];
-for(let i=0;i<10;i++)
+/*  let str= "the fast fox jump over a lazy dog";
+with(str)
 {
-    console.log(array[i]);
-} */ 
-/* note:1--if color is green means data is type of number
-note:2--if color is black means data is type of string */
-/* console.log('\n')
-console.log("passing array to function")
-function arr(size,arr)
-{   
-    for( let i=0;i<size;i++)
-    {
-    console.log(arr[i])
-    }
-}
-arr(10,array);
-console.log("conditional statements:\n");
-let age =18;
-console.log("enter the age:\n");
-if(age<18)
-{
-    console.log("your are a child\n");
-}
-else if(age>18)
-{
-    console.log("you are not a child:\n");
-}
-else if(age==18)
-{
-    console.log("you are a teenager:\n");
+    document.write("string length is:\t"+length+toUpperCase())
 } */
-let j=0;
-while(j<10)
+function O(i)
 {
-    console.log(j);
-    j=j++;
+    return typeof i=='object'?i:document.getElementById(i);
 }
+function S(i)
+{
+    return O(i).style
+}
+S('paragraph').color='blue';
+S('paragraph').text='lowercase';
+/* 
+function func(string,string1,string3)
+{
+     document.write(string)
+}
+func(string)
+*/
+
