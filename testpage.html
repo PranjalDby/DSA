@@ -10,15 +10,20 @@
         nav {
             display: flex;
             position: relative;
-            left: -34px;
+            left: -1px;
             flex-wrap: wrap;
             flex-direction: column;
+            text-transform: capitalize;
         }
 
         li {
             display: inline-flex;
             padding-inline-start: 60px;
             text-transform: capitalize;
+        }
+        li:hover{
+            color: crimson;
+            text-shadow: firebrick;
         }
 
         .navigation {
@@ -29,7 +34,7 @@
         }
 
         ul {
-            width: 100vw;
+            width:30vw;
         }
 
         body {
@@ -38,42 +43,17 @@
             font-family: 'Courier New', Courier, monospace;
             text-transform: capitalize;
         }
-
-        li:hover {
-            color: orangered;
-            text-shadow: 3px;
-        }
-
-        .frm {
-            display: inline-block;
-            text-shadow: black 2px;
-            padding-inline-start: 20px;
-            margin: 10px;
-        }
-        input{margin: 10px;}
-
-        input#fname text{
-            animation: animate 2s ease-in-out infinite;
-        }
+        #fname{animation: animate 2s ease-in-out infinite;transition-property:margin-right;}
+        #mname{animation: animate 2s ease-in-out infinite;}
+        #lname{animation:anime 2s ease-in-out infinite;}
         @keyframes animate {
-            100%{transform: translate(right);}
-            50%{transform: translate(center);}
-            0%{transform: translate(left);}
+            from{transform: translateX(2px);}
+            to{transform: translateY(2px);}
         }
-        input#fnam:hover {
-            border-radius: 2px;
-            opacity: 1;
-            text-transform: capitalize;
+        @keyframes anime {
+            from{transform: translateX(2px);}
+            to{transform:translateZ(2px);}
         }
-
-        input#lname {
-            margin: 10px;
-            opacity: 1;
-        }
-        #dob{position:relative;left:15px;color: white;}
-        .date-time-edit{color:green;background-color: #fff;}
-        .emails{opacity:0.9;display: flex;flex-wrap: wrap;flex-direction:row;}
-        ::placeholder{text-transform: capitalize;}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -94,11 +74,11 @@
                 <div style="opacity: 1;display: flex;flex-wrap: wrap;justify-content: center;">
                 <table border="2px">
                     <tr>
-                        <td style="color: white;"align="center">first_name</td>
+                        <td style="color: white;"align="center"id="fname">first_name</td>
                     </tr>
-                    <tr><td><input type="text"placeholder="firstname"></td></tr>
+                    <tr><td><input type="text"placeholder="firstname"required></td></tr>
                     <tr>
-                        <td style="color: white;"align="center">middle_name</td>
+                        <td style="color: white;"align="center"id="mname">middle_name</td>
                     </tr>
                     <tr>
                         <td>
@@ -106,17 +86,17 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="color: white;"align="center">
+                        <td style="color: white;"align="center"id="lname">
                             last_name
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text"placeholder="last_name">
+                            <input type="text"placeholder="last_name"required>
                         </td>
                     </tr>
                     <tr style="color: white;"align="center">
-                        <td>date_of_birth</td>
+                        <td id="dob">date_of_birth</td>
                     </tr>
                     <tr>
                         <td style="border: 2px red solid;"><input type="date"></td>
@@ -124,9 +104,14 @@
                     <div id="email">
                         <tr>
                             <td>
-                        <input type="email"placeholder="email">
+                        <input type="email"placeholder="email"required>
                         </td>
-                        <td><input type="password"placeholder="enter your password"></td>
+                        <td><input type="password"placeholder="enter your password"required></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><button>
+                                submit
+                            </button></td>
                         </tr>
                     </div>
                 </table>
@@ -140,35 +125,5 @@
         </div>
     </header>
 </body>
-<script>
-   onerror=errorhandler;
-   function errorhandler(message,url,line)
-   {
-       out=("sorry an error was encountered\n");
-       out+="error\t"+message+"\n";
-       out+="url is\t"+url;
-       alert(out);
-   }
-   /*  let str= "the fast fox jump over a lazy dog";
-   with(str)
-   {
-       document.write("string length is:\t"+length+toUpperCase())
-   } */
-   function O(i)
-   {
-       return typeof i=='object'?i:document.getElementById(i);
-   }
-   function S(i)
-   {
-       return O(i).style
-   }
-   S('paragraph').color='blue';
-   S('paragraph').text='lowercase';
-   function func(string,string1,string3)
-   {
-        document.write(string)
-   }
-   this.string="hey";
-   func(string)
-</script>
+<script src="new.js"></script>
 </html>
