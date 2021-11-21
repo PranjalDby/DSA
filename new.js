@@ -1,31 +1,48 @@
-onerror=errorhandler;
-function errorhandler(message,url,line)
-{
-    out=("sorry an error was encountered\n");
-    out+="error\t"+message+"\n";
-    out+="url is\t"+url;
-    alert(out);
+function validate(form) {
+    fail = validatefirstname(form.firstname.value);
+    fail += validatelastname(form.latsname.value);
+    fail += validateemail(form.email.value);
+    fail += validatepassword(form.password.value);
+    if (fail == "") {
+        return true
+    }
+    else {
+        alert(fail);
+        return false
+    }
 }
-/*  let str= "the fast fox jump over a lazy dog";
-with(str)
-{
-    document.write("string length is:\t"+length+toUpperCase())
-} */
-function O(i)
-{
-    return typeof i=='object'?i:document.getElementById(i);
+function validatefirstname(field) {
+    return (field == "") ? "first_name is missing:\n" : ""
 }
-function S(i)
-{
-    return O(i).style
+function validatelastname(field) {
+    return (field == "") ? "last_name is missing:\n" : ""
 }
-S('paragraph').color='blue';
-S('paragraph').text='lowercase';
-/* 
-function func(string,string1,string3)
-{
-     document.write(string)
+function validateemail(field){
+    if (field == "") {
+        return "no username was entered\n."
+    }
+    else if ((/[@]/.test(field))) {
+        return "username must contain special symbol\n"
+    }
 }
-func(string)
-*/
-
+function validatepassword(field)
+{
+    if(field=="")
+    {
+        return "password is missing.\n";
+    }
+    else if(field<6)
+    {
+        return "password must be '6' string long.\n";
+    }
+    else if((/[@,^,a-z,A-Z,0-9]/).test(field))
+    {
+        return "password contain special characters.\n";
+    }
+}
+var arr=[1,4,5,6,6,6,7];
+document.write(arr.length)
+function toggle_theme(toggle)
+{
+    
+}
