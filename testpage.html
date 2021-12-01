@@ -46,7 +46,23 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<script src="new.js"></script>
+<script>
+    /* let a=window.prompt("enter the name:\n");
+    document.write(a); */
+   function confirmation()
+   {
+        let val;
+        val=confirm("do you want to continue:\n");
+        if(val==true)
+        {
+            return document;
+        }
+        else{
+            return false
+        }
+   }
+   document.getElementsByName("btm")
+</script>
 <body>
     <header>
         <nav>
@@ -59,7 +75,7 @@
             </div>
         </nav>
         <main>
-            <form onclick="return validate(this)">
+            <form method="post">
                 <div style="opacity: 1;display: flex;flex-wrap: wrap;justify-content: center;">
                 <table border="2px">
                     <tr>
@@ -82,17 +98,16 @@
                         <tr>
                             <td>
                         <input type="email"placeholder="email"name="email">
-                        <input type="text"placeholder="password"name="password">
+                        <input type="password"placeholder="password"name="password">
                         </td>
                         </tr>
                         <tr>
-                            <td><input type="submit"name="submit">
+                            <td> <button onclick="confirmation();" value="click" name="btm">toggle</button>
                         </tr>
                     </div>
                 </table>
             </form>
         </div>
-        <button class="toggle">toggle</button>
         </main>
     </header>
 </body>
