@@ -1,1 +1,1 @@
-traversal(head);
+ start=insert_at_first(start,40);
