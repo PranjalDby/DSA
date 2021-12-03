@@ -86,4 +86,5 @@ int main()
     scanf("%d",&item);
     start=insert_at_index(start,index,item);
     traversal(start);
+    
 }

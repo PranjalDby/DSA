@@ -1,1 +1,2 @@
- start=insert_at_first(start,40);
+new->prev=ptr;
+    head=ptr;
