@@ -45,7 +45,7 @@ void traversal(struct node * start)
   return head;
   
 } */
-struct node * insert_at_index(struct node * head,int index,int item)
+/* struct node * insert_at_index(struct node * head,int index,int item)
 {
     struct node * new=(struct node *)malloc(sizeof(struct node));
     new->data=item;
@@ -60,7 +60,8 @@ struct node * insert_at_index(struct node * head,int index,int item)
     ptr->next=new;
     return head;
     
-}
+} */
+
 
 int main()
 {
@@ -80,11 +81,11 @@ int main()
     traversal(start); */
     // start=insert_at_end(start,30);
     int index,item;
-    printf("enter the index where you want to insert an item:\n");
+    /* printf("enter the index where you want to insert an item:\n");
     scanf("%d",&index);
     printf("enter the  item:\n");
     scanf("%d",&item);
-    start=insert_at_index(start,index,item);
+    start=insert_at_index(start,index,item); */
     traversal(start);
     
 }
