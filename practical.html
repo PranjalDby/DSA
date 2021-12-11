@@ -100,5 +100,21 @@
         </div>
     </footer>
 </body>
-
+<script>
+    //creating objext
+ /*    let obj={
+        stdname:"rahul",
+        stdroll:22,
+        stdclass:"cse"
+    }
+    console.log(obj.stdname) */
+    function student(name,cls,roll)
+    {
+        this.names=name;
+        this.classes=cls;
+        this.roll=roll
+    }
+    let std=new student("rahul","cse",22);
+   document.write(std.names,std.classes+"\n",std.roll).style.color="red"
+</script>
 </html>

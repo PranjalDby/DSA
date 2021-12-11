@@ -1,2 +1,1 @@
-new->prev=ptr;
-    head=ptr;
+scanf("%d",&dta[i]);

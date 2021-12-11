@@ -57,7 +57,7 @@ struct node *create(struct node *head)
     return head;
     
 } */
-struct node * deletion_last(struct node * head)
+/* struct node * deletion_last(struct node * head)
 {
     struct node * ptr =head;
     while (ptr->next!=head)
@@ -69,6 +69,22 @@ struct node * deletion_last(struct node * head)
     ptr=head;
     return head;
     
+} */
+struct node * deletion_at_index(struct node * head,int index)
+{
+    struct node * ptr=head;
+    int i=0;
+    int item;
+    while (i!=index-1)
+    {
+        i++;
+        ptr=ptr->next;
+    }
+    item=ptr->data;
+    head=ptr;
+    return head;
+
+    
 }
 int main()
 {
@@ -77,6 +93,10 @@ int main()
     head = NULL;
     head = create(head);
    /*  head=deletion_first(head); */
-   head=deletion_last(head);
+  /*  head=deletion_last(head); */
+  int index;
+  printf("enter the index :\n");
+  scanf("%d",&index);
+  head=deletion_at_index(head,index);
     traverse(head);
 }
