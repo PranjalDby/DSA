@@ -1,1 +1,1 @@
-scanf("%d",&dta[i]);
+vals = ptr->data

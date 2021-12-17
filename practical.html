@@ -56,7 +56,9 @@
             justify-content: center;
         }
     </style>
+     <script  src="https://code.jquery.com/jquery-3.6.0.js"
      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+     crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -74,6 +76,9 @@
             <div class="port">
                 <h1>about my self</h1>
             </div>
+            <form action="">
+                <input id="btn">
+            </form>
         </main>
         <div class="myself">
             <p>
@@ -100,22 +105,14 @@
             </a>
         </div>
     </footer>
+    <script>
+        $('h1').css('border','2px red solid');
+        js=$.noConflict();
+        js('p').css('color','green')
+        $('#btn').mouseenter(function()
+        {
+            $
+        })
+    </script>
 </body>
-<script>
-    //creating objext
- /*    let obj={
-        stdname:"rahul",
-        stdroll:22,
-        stdclass:"cse"
-    }
-    console.log(obj.stdname) */
-    function student(name,cls,roll)
-    {
-        this.names=name;
-        this.classes=cls;
-        this.roll=roll
-    }
-    let std=new student("rahul","cse",22);
-   document.write(std.names,std.classes+"\n",std.roll).style.color="red"
-</script>
 </html>
