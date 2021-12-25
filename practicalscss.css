@@ -1,0 +1,14 @@
+.text{display:flex;color: #ff0;text-transform: capitalize;justify-content: center;}
+#fname{display: flex;justify-content:left;font-family:monospace;}
+.danger{color: darkorange;}
+h2{display: inline-block;
+    position: relative;
+    top: 45px;
+    left: -622px;
+}
+#fname{animation: animate 3s ease-in-out infinite ;}
+@keyframes animate {
+    0%{color:orangered;}
+    50%{color: wheat;}
+    100%{color: green;}
+}
