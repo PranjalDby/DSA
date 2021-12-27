@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <main>
+        <imx582 val="1">imx582</imx582>
+        <wide val="3">200000</wide>
+        <uwide val="2">10000</uwide>
+        <macro val="4">15000</macro>
+    </main>
+</module>
+<!--my first xml document-->
