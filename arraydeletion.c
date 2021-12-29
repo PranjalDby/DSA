@@ -5,7 +5,7 @@ int delete (int arr[], int index, int size)
 {
   for (int i = size-1; i>=index; i--)
   {
-      arr[i]=arr[i+1];
+      arr[i]=arr[i-1];
       arr[index]=arr[i];
   }
   
