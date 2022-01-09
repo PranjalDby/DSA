@@ -51,13 +51,33 @@ struct node * insert_at_last(struct node * start)
     return start;
     
 }
+struct node * insert_at_index(struct node * head)
+{
+    int index,val,i=0;
+    printf("enter the value:\n");
+    scanf("%d",&val);
+    printf("enter the index where you want to insert value:\n");
+    scanf("%d",&index);
+    struct node * new=(struct  node *)malloc(sizeof(struct node));
+    new->data=val;
+    struct node * ptr=head;
+    while(i!=index-1)
+    {
+        ptr=ptr->next;
+        i++;
+    }
+    new->next=ptr->next;
+    ptr->next=new;
+    return head;
+
+}
 int main()
 {
-    struct node * head=(struct node *)malloc(sizeof(int));
-    struct node * second=(struct node *)malloc(sizeof(int));
-    struct node * third=(struct node *)malloc(sizeof(int));
-    struct node * forth=(struct node *)malloc(sizeof(int));
-    struct node * fifth=(struct node *)malloc(sizeof(int));
+    struct node * head=(struct node *)malloc(sizeof(struct node));
+    struct node * second=(struct node *)malloc(sizeof(struct node));
+    struct node * third=(struct node *)malloc(sizeof(struct node));
+    struct node * forth=(struct node *)malloc(sizeof(struct node));
+    struct node * fifth=(struct node *)malloc(sizeof(struct node));
     head->data=12;
     head->next=second;
     second->data=33;
@@ -72,7 +92,8 @@ int main()
     insert(head);
     struct node * p=head;
  /*    p=insert_at_first(head); */
- p=insert_at_last(head);
+/*  p=insert_at_last(head); */
+p=insert_at_index(head);
     insert(p);
 
 

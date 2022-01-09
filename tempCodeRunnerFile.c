@@ -1,1 +1,4 @@
- root=pre_traversal(root);
+void create(struct node * tree)
+{
+    tree=NULL;
+}
