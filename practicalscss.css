@@ -1,9 +1,0 @@
-
-#fname{animation: animate 3s ease-in-out infinite ;}
-h1{animation:animate 3s ease-in-out infinite;}
-@keyframes animate {
-    0%{color:orangered;}
-    50%{color: wheat;}
-    100%{color: green;}
-}
-.mnt{border: 2px coral;}

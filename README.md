@@ -1,5 +1,0 @@
-- 👋 Hi, I’m pranjal
-- 👀 I’m computer science student 
-- 🌱 I’m currently persuing  my diploma course
-- 💞️ I’m looking to collaborate on ...
-- 📫 reach me at my git account
