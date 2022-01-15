@@ -1,0 +1,16 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="name">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="friend">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sfriend"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

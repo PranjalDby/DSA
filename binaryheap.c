@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #define MAX 10
-
 void heap(int arr[],int n,int i)
 {
     int p=(i-1)/2;
@@ -26,6 +25,16 @@ void insert(int arr[], int n)
     heap(arr,n,5);
     
 }
+void delete(int arr[],int size)
+{
+   int var,l;
+   l=arr[size-1];
+   arr[0]=arr[l];
+   var=arr[l];
+   size=size-1;
+
+    
+}
 void diaplay(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
@@ -36,7 +45,25 @@ void diaplay(int arr[], int size)
 int main()
 {
     int heap[MAX] = {10, 5, 3, 2, 4};
-    int n = 5;
-    insert(heap, n);
-    diaplay(heap, n);
+    int n = sizeof(heap)/sizeof(heap[0]);
+    int opt;
+    do
+    {
+        printf("1 for insertion:\n");
+        printf("2 for deletion:\n");
+        printf("3 for display:\n");
+        printf("enter the option:\n");
+        scanf("%d",&opt);
+        switch (opt)
+        {
+        case 1:
+        insert(heap,n);
+            break;
+        case 2:
+        delete(heap,n);
+        break;
+        case 3:
+        diaplay(heap,n);
+        }
+    } while (opt!=4);
 }
