@@ -2,6 +2,26 @@
 <?xml-model href="xmlfile.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <name>
     <friend>
-        <sfriend>ashutosh<sfriend>pranjal</sfriend></sfriend>
+        <sfriend>
+            ashutosh
+            <school>
+                divine sainik school
+            </school>
+            <sfriend>
+                pranjal
+                <school>
+                Divine sainik school
+            </school>
+                <sfriend>
+                    aryan
+                    <school>Mahatama J.F Public School
+                        <adress>hey</adress>
+                    </school>
+                    <sfriend>
+                        youtube
+                    </sfriend>
+                </sfriend>
+            </sfriend>
+        </sfriend>
     </friend>
 </name>
