@@ -15,6 +15,20 @@ public class java_jan
       System.out.println("char Is"+x);
       System.out.println("string Is"+name);
       System.out.println("boolean Is"+ n);
-      
+      int a=10,b=10;
+      boolean s;
+      if (a>b) {
+          /* System.out.println(a+"is"+">"+b); */
+            s=true;
+      }
+      else if(a==b)
+      {
+          s=true;
+        System.out.println(s);
+      }
+      else
+      {
+        System.out.println(b + ">" + a);
+      }
   }
 }
