@@ -11,7 +11,7 @@ void traverse(struct node *head)
 {
     struct node *ptr = head;
     printf("list in forward direction\n");
-    while (ptr != NULL)
+    while (ptr!= NULL)
     {
         printf("%d\n", ptr->data);
         ptr = ptr->next;
@@ -47,25 +47,37 @@ void traverse(struct node *head)
     
 } */
 
-struct node * insert_at_index(struct node * head ,int item,int index)
+/* struct node * insert_at_index(struct node * head ,int item,int index)
 {
+    struct node * ptr=head;
     struct node * new=(struct node *)malloc(sizeof(struct node));
     new->data=item;
-    struct node * ptr=head;
     int i=0;
     while (i!=index-1)
     {
-        i++;
         ptr=ptr->next;
+        i++;
     }
     new->next=ptr->next;
-    new->prev=ptr;
     ptr->next=new;
-    ptr=ptr->next;
-    ptr->prev=new;
-    new=head;
+    new->prev=ptr;
+
     return head;
     
+} */
+struct node * delete_from_last(struct node * head)
+{
+    struct node * ptr=head;
+    struct node * p;
+    while (ptr->next!=NULL)
+    {
+        ptr=ptr->next;
+    }
+    int temp;
+    temp=ptr->data;
+    ptr->prev->next=NULL;
+    ptr=head;
+    return head;
 }
 int main()
 {
@@ -88,11 +100,12 @@ int main()
     forth->next = NULL;
     /* start=insert_at_first(start,50); */
     int items,index;
-    printf("enter the item that you want to insert at last:\n");
-    scanf("%d",&items);
+   /*  printf("enter the item that you want to insert at last:\n");
+    scanf("%d",&items); */
     printf("enter the index where you want to insert:\n");
     scanf("%d",&index);
    /*  start=insert_at_last(start,items); */
-  start= insert_at_index(start,items,index);
+ /*  start= insert_at_index(start,items,index); */
+ start=delete_from_last(start);
     traverse(start);
 }

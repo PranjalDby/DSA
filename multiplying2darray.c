@@ -3,7 +3,7 @@
 #include<string.h>
 int main()
 {
-    int arr[10][10],arr2[10][10],arr3[10][10];
+    int arr[3][3],arr2[3][3],arr3[3][3];
     int row1,row2,col1,col2,i,j,k;
     printf("enter the row and column of first:\n");
     scanf("%d%d",&row1,&col1);
@@ -29,6 +29,7 @@ int main()
             scanf("%d",&arr2[i][j]);
         }
     }
+    printf("matrix after multiplication is:\n");
     for(i=0;i<row1;i++)
     {
         for(j=0;j<col2;j++)
