@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    body {
+      background-color:darkorange;
+      box-sizing:content-box;
+      border: inset solid red;
+    }
+
+    #heads {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      animation: animate 2s ease-in forwards infinite;
+      
+    }
+    @keyframes animate {
+       0%
+       {
+         color: white;
+         font-style: normal;
+       }
+       30%
+       {
+         color: aqua;
+         font-style: italic;
+       }
+       45%
+       {
+         color: crimson;
+       }
+       50%
+       {
+         background-color: aquamarine;
+       }
+       100%
+       {
+         translate:40px;
+         font-style: oblique;
+       }
+      }
+
+    .container {
+      display: flex;
+      position: relative;
+      align-content: center;
+      color: white;
+      text-transform: capitalize;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      top: 100px;
+      border:40px dotted red;
+    }
+    #image {
+      display: inline-block;
+      width: 56px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heads">
+    <h1>
+    Resume
+    </h1>
+  </div>
+  <div class="container">
+    name :- pranjal dubey<br>
+    Father's name :- ajay kumar dubey
+    <br>
+    mother's name :- pratibha dubey
+    <br>
+    branch name :- Computer scinece & engineering.
+    Roll no :- 26
+    <br>
+    <span>languages known :-   <span style="color: red;">  like c,java,python...</span></span>
+  </div>
+</body>
+</html>
